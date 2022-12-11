@@ -3,18 +3,60 @@
     padding: 0;
     margin: 0;
     outline: none;
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
   }
 
   body {
     display: flex;
-    padding-left: 5%;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
     background-color: black;
-    color: white;
-    font-size: 20px;
-    font-family: monospace;
     letter-spacing: .12em;
     margin: 0 auto;
     overflow: scroll;
-    white-space: nowrap;
-    border-right: .17em solid pink;
+  }
+
+  textarea {
+    resize: none;
+    background: none;
+    border: none;
+    overflow: hidden;
+  }
+
+  button {
+    background-color: #d9b4ec;
+    border: 1px solid #7526b6;
+    box-sizing: border-box;
+    color: #00132C;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2px;
+    padding: 13px 20px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 115px;
+    margin: 10px 0px 10px;
+    border-radius: 5px;
+  }
+
+  button:hover,
+  button:active {
+    outline: 0;
+  }
+
+  button:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    button {
+      padding: 16px 32px;
+    }
   }
